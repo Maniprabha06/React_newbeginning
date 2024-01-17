@@ -26,5 +26,8 @@ REACT :
         }
 10. CSS : https://styled-components.com/
 11. useful to learn tail wind css (important)
+12. we can apply inline , external, internal css in react as like html.
+13. In events if we pass empty parameter it will give the result without doing that event so it is not encouraged.
+14. If we pass a parameter in function call then before that we should create a ananonyms function. we can pass(e) in parameter to to get the output as event.
 
 
