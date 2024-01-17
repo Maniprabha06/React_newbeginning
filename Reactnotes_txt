@@ -1,0 +1,30 @@
+HTML PAGE:
+<script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+
+
+REACT :
+1. js library
+2. instead of writing full code in javascript we use react to write simple lines of code.
+3. we use jsx(javascript xml (syntax) react code will be converted into javascript full code and then it will manipulate the DOM.
+4. DOM will create a tree in the structure of parent and child.
+5. HTML--> body-->div>h1,p,ul -->(ul-->l1,l2,l3).    -- >  (DOM)
+6. In react use curly braces for js  --> {"Prabha"}
+7. objects and boolean values cannot passed in curly braces it will through error.
+8. Keyword : ctrl+alt+R --> snippet (rafce)
+9. rafce : will create a functional component with the name of file name 
+        const Header = () => {
+            const headerstyle = {backgroundColor : 'mediumblue',
+            color: 'white'}
+          return (
+            <header style={headerstyle}>
+                <h1>to do list</h1>
+            </header>
+          )
+        }
+10. CSS : https://styled-components.com/
+11. useful to learn tail wind css (important)
+
+
