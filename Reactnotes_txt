@@ -39,3 +39,7 @@ REACT :
 18. const [count, setCount] = useState(99); count-->current state , setCount -->next state.
 19. conat [count,setCount] = useState(99); function increament{ setCount(count+1); setCount(count+1); setCount(count+1); } -->at a time a function is called it will change the value at once cannot be changed again and again.
 20. For instead of that we can use function to use it more than once like function incre{ setCount((count) => {return count+1}) setCount((count) => {return count+1}) setCount((count) => {return count+1})}.
+21. In useState we should not call the function. It will call the through the output for any of the other function call too.
+22. Example : const [name,setName] = useState(namee()); -->it will slow down the function.
+23. Instead we can use const [name,setName] = useState(()=>namee());
+24. In useState we should not use objects like useState(text:"like") bcoz while calling this function it will called like varname.text --> it will through error.
