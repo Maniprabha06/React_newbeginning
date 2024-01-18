@@ -95,3 +95,43 @@ function App(){
   );
 }
 export default App;
+
+useState :
+Content.js
+import React from 'react'
+import { useState } from 'react';
+
+const Content = () => {
+  
+    function changename(){
+        const names=["create","learn","Do something"];
+        const int=Math.floor(Math.random()*3);
+        return names[int]
+      }
+
+      function namee(){
+        console.log('Hi hello welcome')
+      }
+    
+      const [count, setCount] = useState(99);
+      const [name,setName] = useState(()=>namee());
+
+      function incrementFunc(){
+        setCount((prevCount) => {return prevCount + 1});
+      }
+      function decrementFunc(){
+        setCount((prevCount) => {return prevCount - 1});
+      }
+
+  return (
+    <main>
+    <p>Lets Earn good </p>
+    <button>Challenge</button><br></br>
+    <button onClick={decrementFunc}>-</button><br></br>
+    <span>{count}</span><br></br>
+    <button onClick={incrementFunc}>+</button><br></br>
+    </main>
+  )
+}
+
+export default Content
