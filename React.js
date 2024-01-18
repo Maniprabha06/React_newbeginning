@@ -135,3 +135,31 @@ const Content = () => {
 }
 
 export default Content
+
+
+Content.js
+import React from 'react'
+import { useState } from 'react';
+
+const Content = () => {
+  
+  const [name , setName]= useState("create");
+
+    function changename(){
+        const names=["create","learn","Do something"];
+        const int=Math.floor(Math.random()*3);
+        setName(names[int])
+      }
+
+      
+
+  return (
+    <main>
+    <p>Lets {name} good </p>
+    <button onClick={changename}>Challenge</button><br></br>
+    
+    </main>
+  )
+}
+
+export default Content
