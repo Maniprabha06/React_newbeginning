@@ -30,4 +30,12 @@ REACT :
 13. In events if we pass empty parameter it will give the result without doing that event so it is not encouraged.
 14. If we pass a parameter in function call then before that we should create a ananonyms function. we can pass(e) in parameter to to get the output result as a brief of event description.
 15. eg : (e) or (e.target) or (e.target.innerText).
-
+16. Inside hooks we cannot create class.
+17.Hook Rules
+        There are 3 rules for hooks:
+                Hooks can only be called inside React function components.
+                Hooks can only be called at the top level of a component.
+                Hooks cannot be conditional.cannot use conditions while using hooks.
+18. const [count, setCount] = useState(99); count-->current state , setCount -->next state.
+19. conat [count,setCount] = useState(99); function increament{ setCount(count+1); setCount(count+1); setCount(count+1); } -->at a time a function is called it will change the value at once cannot be changed again and again.
+20. For instead of that we can use function to use it more than once like function incre{ setCount((count) => {return count+1}) setCount((count) => {return count+1}) setCount((count) => {return count+1})}.
