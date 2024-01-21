@@ -211,3 +211,76 @@ const Content = () => {
 }
 
 export default Content
+
+icons ,list and keys
+Content.js
+import React from 'react'
+import { useState } from 'react';
+import { FaTrashAlt } from "react-icons/fa";
+
+
+const Content = () => {
+    const [items, setItems] = useState(
+      [
+        {id:1,
+        checked : true,
+        item : "Practice coding"
+      },
+      {id:2,
+        checked : false,
+        item : "Learn React"
+      },
+      {id:3,
+        checked : true,
+        item : "Play games"
+      }
+
+      ]);
+
+      const handleCheck= (id) => {
+         const listItems = items.map((item) => item.id===id ? {...item,checked:!item.checked} : item)
+         setItems(listItems)
+      }
+
+      const handleDelete= (id) => {
+        const filteredList = items.filter((item)=> item.id!==id)
+        setItems(filteredList)
+        localStorage.setItem("todo_list",JSON.stringify(filteredList))
+      }
+
+
+      // const numbers = [-2,0,3,4,5];
+      // const itemss = numbers.map(n=> ({number : n}))
+      // const itemss= numbers.filter(n=> n>=0).map(n=>({number :n}))
+      // console.log(itemss)
+  return (
+    <main>
+      {(items.length) ? (
+      <ul>
+          {items.map((item) => (
+            <li className='item' key={item.id}>
+              <input 
+              type=  "checkbox"
+              onChange={() => handleCheck(item.id)}
+              checked= {item.checked}
+              />
+              <label 
+                style={(item.checked)? {textDecoration : 'line-through'}: null}
+              onDoubleClick={()=>handleCheck(item.id)}>{item.item}</label>
+              <FaTrashAlt
+                role = "button"
+                onClick={()=>handleDelete(item.id)}
+                tabIndex="0"
+                />
+            </li>
+          ))}
+  
+      </ul>
+      ):(
+        <p style = {{marginTop:'2rem'}}>Your list is empty</p>
+      )}
+    </main>
+  )
+}
+
+export default Content
