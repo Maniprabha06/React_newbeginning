@@ -44,3 +44,6 @@ REACT :
 23. Instead we can use const [name,setName] = useState(()=>namee());
 24. In useState we should not use objects like useState(text:"like") bcoz while calling this function it will called like varname.text --> it will through error.
 25. map , filter etc are high level function!! 
+26. use npm.js.com for icons.
+27. install react-icons.
+
