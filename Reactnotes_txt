@@ -6,7 +6,7 @@ HTML PAGE:
 
 
 REACT :
-1. js library
+1. js library // jsx file (javascript + HTML)
 2. instead of writing full code in javascript we use react to write simple lines of code.
 3. we use jsx(javascript xml (syntax) react code will be converted into javascript full code and then it will manipulate the DOM.
 4. DOM will create a tree in the structure of parent and child.
