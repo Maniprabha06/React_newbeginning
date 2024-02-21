@@ -48,4 +48,5 @@ REACT :
 27. install react-icons.
 28. clt+shift+p in vs code
 29. react forms can also be created with initial values with the help of useState hook.
+30. react has useEffect hook too.
 
