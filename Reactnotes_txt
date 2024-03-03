@@ -50,5 +50,6 @@ REACT :
 29. react forms can also be created with initial values with the help of useState hook.
 30. react has useEffect hook too.
 31. React has functional component it is very easy to render.
-32. Jsx format --> instead of writing multiple lines of code in js we use react .
+32. Jsx format --> instead of writing multiple lines of code in js we use react.
+33. using react we can create dynamic website
 
